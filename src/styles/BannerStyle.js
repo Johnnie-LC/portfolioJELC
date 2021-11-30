@@ -28,6 +28,7 @@ const BannerStyle = styled.section`
       letter-spacing: 3px;
       & b {
         color: white;
+        display: inline-block;
       }
     }
     h3 {
@@ -41,6 +42,31 @@ const BannerStyle = styled.section`
       color: rgb(164, 168, 175);
       text-transform: uppercase;
       letter-spacing: 2px;
+      a {
+        color: white;
+        position: relative;
+        text-decoration: none;
+        padding: 0 10px;
+        margin: 0 5px;
+        font-size: 2rem;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: 300ms ease-in-out all;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      a[title]:hover::after {
+        content: attr(title);
+        position: absolute;
+        top: -50%;
+        left: 0;
+        padding: 0px 5px;
+        margin-top: 0px;
+        font-size: 0.8rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+      }
     }
   }
   @media (max-width: 736px) {

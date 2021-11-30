@@ -39,6 +39,8 @@ const JobDescriptionStyles = styled.section`
         border-radius: 50%;
         width: 200px;
         height: 200px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 10px 13px -7px #000000;
       }
     }
   }

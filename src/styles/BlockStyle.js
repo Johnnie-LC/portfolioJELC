@@ -9,7 +9,6 @@ const BlockStyle = styled.div`
   );
   width: 100%;
   height: 100px;
-
   @media (min-width: 736px) {
     height: 150px;
   }

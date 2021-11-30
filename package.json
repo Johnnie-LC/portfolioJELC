@@ -21,6 +21,7 @@
     "@emotion/react": "^11.6.0",
     "@emotion/styled": "^11.6.0",
     "@mui/material": "^5.1.1",
+    "animate.css": "^4.1.1",
     "babel-loader": "^8.2.3",
     "html-loader": "^3.0.1",
     "html-webpack-plugin": "^5.5.0",
