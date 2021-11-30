@@ -34,8 +34,7 @@ const JobDescriptionStyles = styled.section`
       align-items: center;
       justify-content: center;
       img {
-        background-image: rgb(0, 0, 0);
-        background-color: rgb(0, 0, 0);
+        background-color: #cccccc;
         border-radius: 50%;
         width: 200px;
         height: 200px;

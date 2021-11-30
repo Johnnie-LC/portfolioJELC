@@ -5,13 +5,13 @@ const ProyectsStyle = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(42, 50, 66, 1);
+  background: ${(props) => props.inputColor};
   color: white;
   .containerProjects {
     width: 100%;
     padding: 30px 60px;
     max-width: 820px;
-    background: rgba(42, 50, 66, 1);
+    background: ${(props) => props.inputColor};
 
     h2 {
       padding-bottom: 14px;

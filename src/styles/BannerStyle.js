@@ -4,7 +4,7 @@ const BannerStyle = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(72, 77, 89);
+  background: ${(props) => props.inputColor};
   background: linear-gradient(
     180deg,
     rgba(72, 77, 89, 1) 0%,

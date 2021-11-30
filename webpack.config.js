@@ -42,6 +42,10 @@ module.exports = {
         test: /\.(s[ac]ss|css)$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        type: 'asset',
+        test: /\.(png|jpg)$/i,
+      },
     ],
   },
   plugins: [

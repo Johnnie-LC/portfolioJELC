@@ -5,7 +5,7 @@ const FooterStyle = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(76, 82, 150);
+  background-color: ${(props) => props.inputColor};
   color: white;
   .contactMe {
     width: 100%;
@@ -21,7 +21,6 @@ const FooterStyle = styled.footer`
       flex-wrap: wrap;
       justify-content: center;
       padding-top: 20px;
-
       li {
         margin: 0px 10px;
         margin-bottom: 10px;
@@ -32,10 +31,20 @@ const FooterStyle = styled.footer`
         width: 100%;
         text-decoration: none;
         color: white;
-        padding: 0 10px;
+        padding: 10px 10px;
         border-radius: 10px;
+        transition: 300ms ease-in-out all;
         &:hover {
-          background-color: gray;
+          background-color: rgba(255, 255, 255, 0.2);
+          /* border: 1px solid rgba(255, 255, 255, 0.2); */
+        }
+        i {
+          transition: 300ms ease-in-out all;
+        }
+
+        &:hover i {
+          transform: rotate(-360deg);
+          color: rgba(255, 255, 0, 0.9);
         }
       }
     }
@@ -47,11 +56,13 @@ const FooterStyle = styled.footer`
       margin-bottom: 30px;
       li {
         width: 100%;
+        padding: 0 !important;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.2);
         border: 2px solid rgba(255, 255, 255, 0.4);
         border-radius: 10px;
         font-size: 1.5rem;
+
         a {
           display: flex;
           justify-content: center;

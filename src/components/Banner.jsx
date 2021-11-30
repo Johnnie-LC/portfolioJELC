@@ -2,34 +2,15 @@
 import Block from './Block'
 import { BannerStyle } from '../styles/BannerStyle.js'
 import 'animate.css/animate.min.css'
+import { randomAnimate } from '../assets/randomAnimate'
 
-const personalInfo = {
-  name: 'Johnnie',
-  ocupation: 'Frontend Developer',
-  github: 'https://github.com/Johnnie-LC',
-  likedin: 'https://www.linkedin.com/in/johnnie-lopez-3343008/',
-  technoloies: [
-    'JavasCript',
-    'React',
-    'Redux',
-    'webpack',
-    'css',
-    'sass',
-    'bootstrap',
-    'material UI',
-  ],
-}
-
-const backgroundUp = 'rgba(42, 50, 66, 1)'
-const backgroundDown = 'rgb(76,82,150)'
-
-const Banner = () => {
-  const { name, ocupation, technoloies, github, likedin } = personalInfo
+const Banner = ({ name, ocupation, technoloies, github, likedin, bground }) => {
   return (
     <>
-      <BannerStyle inputColor={backgroundUp}>
+      {console.log(bground)}
+      <BannerStyle inputColor={bground[0]}>
         <div>
-          <h2>
+          <h2 className={`animate__animated ${randomAnimate()}`}>
             Hi my name is{' '}
             <b className="animate__animated animate__pulse animate__slow animate__infinite">
               {name}
@@ -49,8 +30,8 @@ const Banner = () => {
         </div>
       </BannerStyle>
       <Block
-        upColor={backgroundUp}
-        downColor={backgroundDown}
+        upColor={bground[0]}
+        downColor={bground[1]}
         orientation={'to right bottom'}
       />
     </>
