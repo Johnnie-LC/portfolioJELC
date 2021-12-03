@@ -5,7 +5,7 @@ import Block from './Block'
 const ProjectsContainer = ({ title, description, projects, bground }) => {
   return (
     <>
-      <ProyectsStyle inputColor={bground[0]}>
+      <ProyectsStyle inputColor={bground[0]} id="Projects">
         <div className="containerProjects">
           <h2>{title}</h2>
           <p>{description}</p>

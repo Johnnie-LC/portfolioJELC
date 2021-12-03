@@ -7,7 +7,7 @@ import user from '../assets/img/user.png'
 const JobDescription = ({ titulo, descripcion, bground }) => {
   return (
     <>
-      <JobDescriptionStyles bgColor={bground[1]}>
+      <JobDescriptionStyles bgColor={bground[1]} id="About me">
         <div className="containerDescription">
           <div className="sideLeft">
             <h2>{titulo}</h2>
@@ -15,7 +15,6 @@ const JobDescription = ({ titulo, descripcion, bground }) => {
           </div>
           <div className="sideRight animate__animated animate__pulse animate__slow animate__infinite">
             <img src={user} alt="Johnnie" />
-            {/* <img src={bacgroundImage} alt="Johnnie" width="200" height="200" /> */}
           </div>
         </div>
       </JobDescriptionStyles>

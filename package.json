@@ -33,6 +33,7 @@
     "webpack-dev-server": "^4.5.0"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.2",
     "css-loader": "^6.5.1",
     "mini-css-extract-plugin": "^2.4.5",
     "sass": "^1.43.4",

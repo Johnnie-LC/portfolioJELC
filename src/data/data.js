@@ -17,13 +17,13 @@ const data = {
   },
   description: {
     titulo: 'About me',
-    descripcion:
-      'Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.',
+    descripcion: `I am passionate about web development, especially with JavaScript and React.
+
+    Lately I have been acquiring new programming skills in the Frontend side like Redux, Bootstrap, Material UI and JEST.`,
   },
   proyectsContent: {
     title: 'Projects',
-    description:
-      'Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.',
+    description: '',
     projects: [
       {
         title: 'SED FEUGIAT LOREM',

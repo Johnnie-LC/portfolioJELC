@@ -3,11 +3,10 @@ import styled from 'styled-components'
 const MenuStyle = styled.nav`
   position: absolute;
   width: 100vw;
-  height: 100vh;
-
+  height: 100%;
+  z-index: 10;
   top: 0;
   left: 0%;
-
   padding: 10px;
 
   background-color: rgba(0, 0, 0, 0.3);

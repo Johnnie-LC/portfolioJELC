@@ -1,7 +1,7 @@
 import { FooterStyle } from '../styles/FooterStyle.js'
 
 const Footer = ({ linkedIn, mail, whatsapp, bground }) => (
-  <FooterStyle inputColor={bground[1]}>
+  <FooterStyle inputColor={bground[1]} id="Contact me">
     <div className="contactMe">
       <h2>Contact me</h2>
       <ul>

@@ -1,6 +1,6 @@
 import { MenuStyle } from '../styles/MenuStyle.js'
 
-const menuItems = ['Home', 'Generic', 'Elements', 'log In', 'Sign Up']
+const menuItems = ['Home', 'About me', 'Projects', 'Contact me']
 
 const Menu = () => (
   <MenuStyle display="none">

@@ -48,6 +48,9 @@ const JobDescriptionStyles = styled.section`
       flex-direction: column-reverse;
       & .sideLeft {
         text-align: center;
+        p {
+          text-align: justify;
+        }
       }
       & .sideRight {
         padding-bottom: 10px;

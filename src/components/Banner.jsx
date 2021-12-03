@@ -7,8 +7,7 @@ import { randomAnimate } from '../assets/randomAnimate'
 const Banner = ({ name, ocupation, technoloies, github, likedin, bground }) => {
   return (
     <>
-      {console.log(bground)}
-      <BannerStyle inputColor={bground[0]}>
+      <BannerStyle inputColor={bground[0]} id="Home">
         <div>
           <h2 className={`animate__animated ${randomAnimate()}`}>
             Hi my name is{' '}
